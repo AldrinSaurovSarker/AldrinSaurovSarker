@@ -17,32 +17,32 @@
     <script src="https://kit.fontawesome.com/09146724eb.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-        // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
 
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-                // Store hash
-                var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
 
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
                 } // End if
             });
         });
     </script>
-    
+
     <title>Aldrin Saurov Sarker</title>
     <link rel="icon" href="images/logo.png">
 </head>
@@ -126,7 +126,8 @@
 
                         <ul>
                             <li data-bs-toggle="popover" data-toggle="popover" data-trigger="hover">
-                                <a href="https://www.instagram.com/crystal_zatt/?fbclid=IwAR3yABVsQhYs09o2tvvDKPfjaBrM0XzPWRVleB55GdcXSrUv-ewGO_58i7M" target="_blank">
+                                <a href="https://www.instagram.com/crystal_zatt/?fbclid=IwAR3yABVsQhYs09o2tvvDKPfjaBrM0XzPWRVleB55GdcXSrUv-ewGO_58i7M"
+                                    target="_blank">
                                     <i class="fab fa-instagram icon"></i>
                                 </a>
                             </li>
@@ -140,7 +141,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </section>
@@ -164,19 +165,19 @@
                 <span style="--i:2;"></span>
                 <span style="--i:3;"></span>
             </div>
-    
+
             <div class="glowing">
                 <span style="--i:1;"></span>
                 <span style="--i:2;"></span>
                 <span style="--i:3;"></span>
             </div>
-    
+
             <div class="glowing">
                 <span style="--i:1;"></span>
                 <span style="--i:2;"></span>
                 <span style="--i:3;"></span>
             </div>
-    
+
             <div class="glowing">
                 <span style="--i:1;"></span>
                 <span style="--i:2;"></span>
@@ -186,12 +187,12 @@
 
         <div class="container py-5">
             <h1 class="text-uppercase"><span>S</span>kills</h1>
-            
+
             <div class="row my-5 align-items-center proficient">
                 <div class="col-md-8">
                     <h4 class="text-uppercase">Proficient</h4>
                 </div>
-            
+
                 <div class="row d-block d-lg-flex align-items-center">
                     <div class="col">
                         <i class="devicon-python-plain"></i> Python
@@ -244,7 +245,7 @@
     <section id="projects">
         <div class="container">
             <h1 class="text-light text-uppercase"><span>P</span>rojects</h1>
-            <div class="carousel carousel-dark slide" id="project-slider" data-bs-ride="carousel" data-interval="15000">
+            <!-- <div class="carousel carousel-dark slide" id="project-slider" data-bs-ride="carousel" data-interval="15000">
                 <ul class="carousel-indicators">
                     <li data-bs-target="#project-slider" data-bs-slide-to="0" class="active"></li>
                     <li data-bs-target="#project-slider" data-bs-slide-to="1"></li>
@@ -302,74 +303,6 @@
                                 class="text-info float-end">C++ Graphics</span>
                         </div>
                     </div>
-
-                    <div class="carousel-item m-5">
-                        <div class="resume-content">
-                            <h3 class="mb-0 text-uppercase">Brain Booster</h3>
-                            <h4 class="mb-3 text-uppercase">Personal Project</h4>
-                            <p class="text-light">
-                               A game that can boost your brain, focus and concentration.
-                            </p>
-                        </div>
-                        <div class="resume-date">
-                            <a class="info" href="https://fervent-blackwell-7824a5.netlify.app/" target="_blank">
-                                <i>Web Site</i>
-                            </a>
-                            <span
-                                class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item m-5">
-                        <div class="resume-content">
-                            <h3 class="mb-0 text-uppercase">Memory Game</h3>
-                            <h4 class="mb-3 text-uppercase">Personal Project</h4>
-                            <p class="text-light">
-                               Memorize, flip and match cards.
-                            </p>
-                        </div>
-                        <div class="resume-date">
-                            <a class="info" href="https://musing-cray-17b13b.netlify.app/memory-game.html" target="_blank">
-                                <i>Web Site</i>
-                            </a>
-                            <span
-                                class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item m-5">
-                        <div class="resume-content">
-                            <h3 class="mb-0 text-uppercase">Minesweeper</h3>
-                            <h4 class="mb-3 text-uppercase">Personal Project</h4>
-                            <p class="text-light">
-                               Classic Minesweeper with a lots of themes.
-                            </p>
-                        </div>
-                        <div class="resume-date">
-                            <a class="info" href="https://wonderful-pike-9eae35.netlify.app/" target="_blank">
-                                <i>Web Site</i>
-                            </a>
-                            <span
-                                class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item m-5">
-                        <div class="resume-content">
-                            <h3 class="mb-0 text-uppercase">Tic Tac Toe</h3>
-                            <h4 class="mb-3 text-uppercase">Personal Project</h4>
-                            <p class="text-light">
-                                Tic Tac Toe Game with Artificial Intelligence.
-                            </p>
-                        </div>
-                        <div class="resume-date">
-                            <a class="info" href="https://gracious-mayer-426df4.netlify.app/" target="_blank">
-                                <i>Web Site</i>
-                            </a>
-                            <span
-                                class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
-                        </div>
-                    </div>
                 </div>
 
                 <a class="carousel-control-prev" href="#project-slider" data-bs-slide="prev">
@@ -378,8 +311,92 @@
                 <a class="carousel-control-next" href="#project-slider" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
+            </div> -->
+            <div class="grid-container">
+                <div class="grid-item d-grid">
+                    <div class="thumbnail">
+                        <video src="videos/projects/brain booster.mp4" autoplay muted loop></video>
+                    </div>
+
+                    <div class="resume-content p-3">
+                        <h2 class="mb-0 text-uppercase fw-bold">Brain Booster</h2>
+                        <h5 class="mb-3 text-uppercase text-muted">Personal Project</h5>
+                        <p class="text-success">
+                            A game that can boost your brain, focus and concentration.
+                        </p>
+                    </div>
+
+                    <div class="resume-date p-3">
+                        <a class="info" href="https://fervent-blackwell-7824a5.netlify.app/" target="_blank">
+                            <div class="btn btn-outline-dark">Play Now For Free</div>
+                        </a>
+                        <span class="text-primary float-end">HTML | CSS | Bootstrap | JS</span>
+                    </div>
+                </div>
+
+                <div class="grid-item d-grid">
+                    <div class="thumbnail">
+                        <video src="videos/projects/memory game.mp4" autoplay muted loop></video>
+                    </div>
+
+                    <div class="resume-content p-3">
+                        <h2 class="mb-0 text-uppercase fw-bold">Memory Game</h2>
+                        <h5 class="mb-3 text-uppercase text-muted">Personal Project</h5>
+                        <p class="text-success">
+                            Memorize, flip and match cards.
+                        </p>
+                    </div>
+
+                    <div class="resume-date p-3">
+                        <a class="info" href="https://musing-cray-17b13b.netlify.app/memory-game.html" target="_blank">
+                            <div class="btn btn-outline-dark">Play Now For Free</div>
+                        </a>
+                        <span class="text-primary float-end">HTML | CSS | Bootstrap | JS</span>
+                    </div>
+                </div>
+
+                <div class="grid-item d-grid">
+                    <div class="thumbnail">
+                        <video src="videos/projects/minesweeper.mp4" autoplay muted loop></video>
+                    </div>
+
+                    <div class="resume-content p-3">
+                        <h2 class="mb-0 text-uppercase fw-bold">Minesweeper</h2>
+                        <h5 class="mb-3 text-uppercase text-muted">Personal Project</h5>
+                        <p class="text-success">
+                            Minesweeper with a lot of new themes.
+                        </p>
+                    </div>
+
+                    <div class="resume-date p-3">
+                        <a class="info" href="https://wonderful-pike-9eae35.netlify.app/" target="_blank">
+                            <div class="btn btn-outline-dark">Play Now For Free</div>
+                        </a>
+                        <span class="text-primary float-end">HTML | CSS | Bootstrap | JS</span>
+                    </div>
+                </div>
+
+                <div class="grid-item d-grid">
+                    <div class="thumbnail">
+                        <video src="videos/projects/tic tac toe.mp4" autoplay muted loop></video>
+                    </div>
+
+                    <div class="resume-content p-3">
+                        <h2 class="mb-0 text-uppercase fw-bold">Tic Tac Toe</h2>
+                        <h5 class="mb-3 text-uppercase text-muted">Personal Project</h5>
+                        <p class="text-success">
+                            Tic Tac Toe Game with Artificial Intelligence.
+                        </p>
+                    </div>
+
+                    <div class="resume-date p-3">
+                        <a class="info" href="https://gracious-mayer-426df4.netlify.app/" target="_blank">
+                            <div class="btn btn-outline-dark">Play Now For Free</div>
+                        </a>
+                        <span class="text-primary float-end">HTML | CSS | Bootstrap | JS</span>
+                    </div>
+                </div>                
             </div>
-        </div>
     </section>
 
     <section id="experience">
@@ -446,17 +463,50 @@
 
     <section id="certification">
         <div id="particles-js">
-            <div class="container">
+            <div class="container-fluid mt-5">
                 <h1 class="text-light text-uppercase"><span>C</span>ertifications</h1>
-                <h4 class="text-uppercase">Nothing to show</h4>
+                <div class="grid-container">
+                    <div class="grid-item text-dark d-lg-flex">
+                        <img src="images/certificate/HackerRank.png" alt="" class="img-thumbnail">
+                        <div class="details">
+                            <h4>Problem Solving (Basic) Certificate</h4>
+                            <p>HackerRank</p>
+                            <p class="text-muted">Issued Jan 2022 · No Expiration Date</p>
+                            <a href="https://www.hackerrank.com/certificates/a9254ff8c1c8" target="_blank"
+                                class="btn btn-info text-light">View</a>
+                        </div>
+                    </div>
+
+                    <div class="grid-item text-dark d-lg-flex">
+                        <img src="images/certificate/HackerRank.png" alt="" class="img-thumbnail">
+                        <div class="details">
+                            <h4>Python (Basic) Skills Certification Test</h4>
+                            <p>HackerRank</p>
+                            <p class="text-muted">Issued Jan 2022 · No Expiration Date</p>
+                            <a href="https://www.hackerrank.com/certificates/28f76140fcb2" target="_blank"
+                                class="btn btn-info text-light">View</a>
+                        </div>
+                    </div>
+
+                    <div class="grid-item text-dark d-lg-flex">
+                        <img src="images/certificate/HackerRank.png" alt="" class="img-thumbnail">
+                        <div class="details">
+                            <h4>SQL (Basic) Certificate</h4>
+                            <p>HackerRank</p>
+                            <p class="text-muted">Issued Jan 2022 · No Expiration Date</p>
+                            <a href="https://www.hackerrank.com/certificates/ea59ead61606" target="_blank"
+                                class="btn btn-info text-light">View</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="container">
+            <!-- <div class="container">
                 <h1 class="text-light text-uppercase"><span>O</span>thers</h1>
                 <h4 class="text-uppercase">
                     Find me on <a href="https://codeforces.com/profile/WiNterBoy180204" target="_blank">Codeforces</a> and <a href="https://stackoverflow.com/users/14632202/aldrin-saurov-sarkers" target="_blank">StackOverFlow</a>
                 </h4>
-            </div>
+            </div> -->
         </div>
     </section>
 

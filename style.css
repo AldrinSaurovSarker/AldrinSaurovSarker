@@ -240,14 +240,14 @@ nav .nav-item:nth-child(6) a:hover
     margin-left: 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 991px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 991px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -345,97 +345,10 @@ nav .nav-item:nth-child(6) a:hover
     height: 100%;
 }
 
-.shake
-{
-  animation: shake 0.5s;
-  animation-iteration-count: 2;
-}
-
-@keyframes shake
-{
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-.swing
-{
-    animation: swing linear 1s 1 alternate;
-}
- 
-@keyframes swing
-{
-    0% { transform: rotate(30deg); }
-    25% { transform: rotate(-30deg); }
-    50% { transform: rotate(30deg); }
-    75% { transform: rotate(-30deg); }
-    100% { transform: rotate(0deg); }
-}
-
-.rubberBand
-{
-    animation-name: rubberBand;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-}
-
-@keyframes rubberBand
-{
-    from
-    {
-        transform: scale3d(1, 1, 1);
-    }
-
-    30%
-    {
-        transform: scale3d(1.25, 0.75, 1);
-    }
-
-    40%
-    {
-        transform: scale3d(0.75, 1.25, 1);
-    }
-
-    50%
-    {
-        transform: scale3d(1.15, 0.85, 1);
-    }
-
-    65%
-    {
-        transform: scale3d(.95, 1.05, 1);
-    }
-
-    75%
-    {
-        transform: scale3d(1.05, .95, 1);
-    }
-
-    to
-    {
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-.rubberBand
-{
-    -webkit-animation-name: rubberBand;
-    animation-name: rubberBand;
-}
-
 /* -----projects----- */
 #projects
 {
-    background-image: radial-gradient(#262626, black);
+    background-color: #212529;
     backface-visibility: hidden;
 }
 
@@ -567,12 +480,21 @@ nav .nav-item:nth-child(6) a:hover
     font-family: 'Overlock', cursive;
 }
 
+#projects .grid-container {
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+#projects .grid-item video {
+    width: 100%;
+}
+
 /* -----skills----- */
 #skills
 {
     color: #F5F5F5;
     width: 100%;
-    background-color: #000000;
+    background-color: #212529;
     overflow: hidden;
 }
 
@@ -753,24 +675,11 @@ nav .nav-item:nth-child(6) a:hover
     background: linear-gradient(rgba(0, 0, 0, 0.8), #009688), url(images/exp.jpeg);
     background-position: center;
     background-size: cover;
-}
-
-@media only screen and (min-width: 500px)
-{
-    #experience .container
-    {
-        padding-top: 30%;
-        padding-bottom: 30%;
-    }
-}
-
-@media only screen and (min-width: 1500px)
-{
-    #experience .container
-    {
-        padding-top: 15%;
-        padding-bottom: 15%;
-    }
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 #experience h1
@@ -794,6 +703,7 @@ nav .nav-item:nth-child(6) a:hover
     color: #f5f5f5;
     position: relative;
     overflow: hidden;
+    padding: 10px;
 }
 
 #education .bubbles
@@ -810,6 +720,11 @@ nav .nav-item:nth-child(6) a:hover
 {
     width: 50px;
     animation: bubble 7s linear infinite;
+}
+
+#education .col {
+    display: flex;
+    align-items: center;
 }
 
 @keyframes bubble
@@ -898,16 +813,17 @@ nav .nav-item:nth-child(6) a:hover
 #certification
 {
     position: relative;
+    height: max-content;
 }
 
-#certification .container
+#certification .container-fluid
 {
     position: absolute;
-    line-height: 100%;
 }
 
 #certification h1
 {
+    padding-left: 8vw;
     font-family: "Arima Madurai", cursive;
     font-weight: bolder;
 }
@@ -928,16 +844,6 @@ nav .nav-item:nth-child(6) a:hover
     }
 }
 
-#certification .container:nth-child(1)
-{
-    top: 25%;
-}
-
-#certification .container:nth-child(2)
-{
-    top: 50%;
-}
-
 #certification a
 {
     color: #ffff00ff;
@@ -950,11 +856,32 @@ nav .nav-item:nth-child(6) a:hover
 
 #certification h4
 {
-    color: #00E2FF;
+    color: #2b838f;
+}
+
+#certification .grid-container {
+    width: 100%;
+    column-gap: 25px;
+    row-gap: 25px;
+    padding: 7vw;
+}
+
+#projects .grid-item,
+#certification .grid-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #ccc;
+}
+
+#certification .grid-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
 }
 
 #particles-js
 {
     background-image: linear-gradient(#009688, #000000ff);
-    height: 1000px;
+    height: 200vh;
 }
