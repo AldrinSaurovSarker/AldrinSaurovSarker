@@ -1,0 +1,920 @@
+h1 span
+{
+    color: #ffd600;
+    font-size: 150%;
+}
+
+.text-animate
+{
+    color: #00E0EC;
+    animation-name: color-changer;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-changer
+{
+    0%{ color: #00E0EC;}
+    20%{ color: #BC2A8D;}
+    40%{ color: #0077B5;}
+    60%{ color: #8a15ad;}
+    80%{ color: #2916d4;}
+}
+
+nav .nav-item
+{
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 20px;
+    font-family: "Arima Madurai";
+}
+
+nav .navbar-brand img
+{
+    width: 12.5vw;
+    height: auto;
+}
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active
+{
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.toggler-icon
+{
+    width: 30px;
+    height: 3px;
+    background-color: #00E0EC;
+    display: block;
+    transition: all 0.2s;
+}
+
+.middle-bar
+{
+    margin: 5px auto;
+}
+
+.navbar-toggler .top-bar
+{
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+    background-color: #ff0000;
+}
+
+.navbar-toggler .middle-bar
+{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar
+{
+    background-color: #ff0000;
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler.collapsed .top-bar
+{
+    background-color: #00E0EC;
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar
+{
+    background-color: #00E0EC;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar
+{
+    background-color: #00E0EC;
+    transform: rotate(0);
+}
+
+.navbar-toggler .drop, .navbar-toggler .dropped
+{
+    top: 25px;
+    right: 60px;
+    position: absolute;
+    color: #F8F9FA;
+    font-weight: bold;
+}
+
+.navbar-toggler .drop
+{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler.collapsed .drop
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler .dropped
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .dropped
+{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+nav .nav-item a
+{
+    color: #F8F9FA !important;
+}
+
+nav .nav-item a:hover
+{
+    transition: all 0.2s ease;
+}
+
+nav .nav-item:nth-child(1) a:hover
+{
+    color: #FFC107 !important;
+}
+
+nav .nav-item:nth-child(2) a:hover
+{
+    color: #DC3545 !important;
+}
+
+nav .nav-item:nth-child(3) a:hover
+{
+    color: #0D6EFD !important;
+}
+
+nav .nav-item:nth-child(4) a:hover
+{
+    color: #198754 !important;
+}
+
+nav .nav-item:nth-child(5) a:hover
+{
+    color: #6C757D !important;
+}
+
+nav .nav-item:nth-child(6) a:hover
+{
+    color: #00E0EC !important;
+}
+
+/* -----About------ */
+#about
+{
+    width: 100%;
+    background-color: #212529;
+}
+
+#about .col:nth-child(1)
+{
+    padding: 5% 5% 0 5%;
+    background-color: #F8F9FA;
+}
+
+#about .col:nth-child(2)
+{
+    padding: 0;
+}
+
+#about .col:nth-child(2) .dp
+{
+    max-width: 100%;
+}
+
+#about .col .card-title
+{
+    font-family: "Rancho";
+    font-size: 4.5vw;
+    font-weight: bolder;
+}
+
+#about .address
+{
+    font-family: "Arima Madurai";
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+#about .address a
+{
+    color: #10a1b4;
+    text-decoration: none;
+}
+
+#about .address a:hover
+{
+    color: #0077b5;
+    text-decoration: underline;
+}
+
+#about .col .card-text
+{
+    font-weight: 600;
+}
+
+#about .col .card-text b
+{
+    font-family: "Satisfy";
+    font-size: 2.5vw;
+}
+
+#about .about-me {
+    font-size: 1vw;
+}
+
+#about .social-links ul
+{
+    display: flex;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#about .social-links ul li a
+{
+    width: 6vw;
+    height: 6vw;
+    background-color: #fff;
+    text-align: center;
+    line-height: 6vw;
+    font-size: 3vw;
+    margin: 0 1vw;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 0.25vw solid #aaa;
+    z-index: 1;
+}
+
+#about .social-links ul li a:hover
+{
+    border: 3px solid #fff;
+}
+  
+#about .social-links ul li a .icon
+{
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+  
+#about .social-links ul li a:hover .icon
+{
+    color: #fff;
+    transform: rotateY(360deg);
+}
+  
+#about .social-links ul li a:before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+  
+#about .social-links ul li a:hover:before
+{
+    top: 0;
+}
+  
+#about .social-links ul li:nth-child(1) a:before
+{
+    background: #3b5999;
+}
+  
+#about .social-links ul li:nth-child(2) a:before
+{
+    background: #0077b5;
+}
+  
+#about .social-links ul li:nth-child(3) a:before
+{
+    background: #BC2A8D;
+}
+
+#about .social-links ul li:nth-child(4) a:before
+{
+    background: #262626;
+}
+
+#about .social-links ul li
+{
+    list-style: none;
+}
+
+.dp {
+    height: 100%;
+}
+
+.shake
+{
+  animation: shake 0.5s;
+  animation-iteration-count: 2;
+}
+
+@keyframes shake
+{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.swing
+{
+    animation: swing linear 1s 1 alternate;
+}
+ 
+@keyframes swing
+{
+    0% { transform: rotate(30deg); }
+    25% { transform: rotate(-30deg); }
+    50% { transform: rotate(30deg); }
+    75% { transform: rotate(-30deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.rubberBand
+{
+    animation-name: rubberBand;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes rubberBand
+{
+    from
+    {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30%
+    {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40%
+    {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50%
+    {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65%
+    {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75%
+    {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to
+    {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.rubberBand
+{
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
+
+/* -----projects----- */
+#projects
+{
+    background-image: radial-gradient(#262626, black);
+    backface-visibility: hidden;
+}
+
+#projects h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#projects .container
+{
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+#projects .container .carousel
+{
+    background: #008080ff;
+    min-height: 300px;
+    padding: 15px;
+    max-width: 1000px;
+}
+#projects .container .carousel .resume-date {
+    position: relative;
+}
+
+#projects .container .carousel .resume-date a
+{
+    color: #F5F5F5;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#projects .container .carousel .resume-date a:hover {
+    color: #FFC107;
+}
+
+#projects .container .carousel .carousel-control-prev span
+{
+    background-color: red;
+    border: red 1px solid;
+    border-radius: 50%;
+}
+
+#projects .container .carousel .carousel-control-next span
+{
+    background-color: red;
+    border: red 1px solid;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 500px)
+{
+    #projects .container .carousel .carousel-control-prev span
+    {
+        transform: translateX(-10px);
+    }
+
+    #projects .container .carousel .carousel-control-next span
+    {
+        transform: translateX(10px);
+    }
+}
+
+@media screen and (min-width: 750px)
+{
+    #projects .container .carousel .carousel-control-prev span
+    {
+        transform: translateX(-20px);
+    }
+
+    #projects .container .carousel .carousel-control-next span
+    {
+        transform: translateX(20px);
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    #projects .container .carousel .carousel-control-prev span
+    {
+        transform: translateX(-30px);
+    }
+
+    #projects .container .carousel .carousel-control-next span
+    {
+        transform: translateX(30px);
+    }
+}
+
+@media screen and (min-width: 1250px)
+{
+    #projects .container .carousel .carousel-control-prev span
+    {
+        transform: translateX(-40px);
+    }
+
+    #projects .container .carousel .carousel-control-next span
+    {
+        transform: translateX(40px);
+    }
+}
+
+#projects .container .carousel .carousel-indicators li
+{
+    height: 5px;
+    background-color: #00D0EC;
+}
+
+#projects .container .carousel .carousel-indicators .active
+{
+    background-color: #555;
+}
+
+#projects .container .carousel h3
+{
+    color: #00D0EC;
+    font-family: "Arima Madurai";
+    font-weight: 800;
+}
+
+#projects .container .carousel p
+{
+    font-family: 'Overlock', cursive;
+}
+
+/* -----skills----- */
+#skills
+{
+    color: #F5F5F5;
+    width: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+#skills .container .col:hover
+{
+    background-color: #00808088;
+    transition: 0.5s ease-in-out;
+}
+
+#skills .container h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#skills .container h4
+{
+    color: #00D0EC;
+    font-family: "Arima Madurai", cursive;
+    font-weight: bolder;
+}
+
+#skills .container .col
+{
+    font-size: 22px;
+    font-family: "Overlock", cursive;
+    margin: 10px;
+    padding: 10px;
+}
+
+#skills .container .col i
+{
+    border: 1px solid #00D0EC;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#skills .container .familiar .col i
+{
+    color: #00D0EC;
+    border: 1px solid #F5F5F5;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#skills .background
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .glowing
+{
+    position: relative;
+    min-width: 750px;
+    margin: -150px;
+    transform-origin: right;
+    animation: colorChange 5s linear infinite;
+}
+
+#skills .glowing:nth-child(even)
+{
+    transform-origin: left;
+}
+
+@keyframes colorChange
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#skills .glowing span
+{
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+}
+
+#skills .glowing span:before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background-color: #F00;
+    border-radius: 50%;
+}
+
+#skills .glowing span:nth-child(3n + 1):before
+{
+    background: rgba(134, 255, 0, 1);
+    box-shadow: 0 0 20px rgba(134, 255, 0, 1),
+                0 0 40px rgba(134, 255, 0, 1),
+                0 0 60px rgba(134, 255, 0, 1),
+                0 0 80px rgba(134, 255, 0, 1),
+                0 0 0 8px rgba(134, 255, 0, 0.1);
+}
+
+#skills .glowing span:nth-child(3n + 2):before
+{
+    background: rgba(255, 214, 0, 1);
+    box-shadow: 0 0 20px rgba(255, 214, 0, 1),
+                0 0 40px rgba(255, 214, 0, 1),
+                0 0 60px rgba(255, 214, 0, 1),
+                0 0 80px rgba(255, 214, 0, 1),
+                0 0 0 8px rgba(255, 214, 0, 0.1);
+}
+
+#skills .glowing span:nth-child(3n + 3):before
+{
+    background: rgba(0, 226, 255, 1);
+    box-shadow: 0 0 20px rgba(0, 226, 255, 1),
+                0 0 40px rgba(0, 226, 255, 1),
+                0 0 60px rgba(0, 226, 255, 1),
+                0 0 80px rgba(0, 226, 255, 1),
+                0 0 0 8px rgba(0, 226, 255, 0.1);
+}
+
+#skills .glowing span:nth-child(3n + 1)
+{
+    animation: animate 10s alternate infinite;
+}
+
+#skills .glowing span:nth-child(3n + 2)
+{
+    animation: animate-reverse 3s alternate infinite;
+}
+
+#skills .glowing span:nth-child(3n + 3)
+{
+    animation: animate 8s alternate infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-reverse
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+/* -----Experience----- */
+#experience
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), #009688), url(images/exp.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 500px)
+{
+    #experience .container
+    {
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+}
+
+@media only screen and (min-width: 1500px)
+{
+    #experience .container
+    {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+}
+
+#experience h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#experience h4
+{
+    color: #00e2ff;
+}
+
+/* -----Education----- */
+#education
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+
+#education .bubbles
+{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: -70px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#education .bubbles img
+{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+@keyframes bubble
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%
+    {
+        opacity: 1;
+    }
+
+    75%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+}
+
+#education .bubbles img:nth-child(1)
+{
+    animation-delay: 2s;
+    width: 25px;
+}
+
+#education .bubbles img:nth-child(2)
+{
+    animation-delay: 1s;
+}
+
+#education .bubbles img:nth-child(3)
+{
+    animation-delay: 3s;
+    width: 25px;
+}
+
+#education .bubbles img:nth-child(4)
+{
+    animation-delay: 4.5s;
+}
+
+#education .bubbles img:nth-child(5)
+{
+    animation-delay: 3s;
+}
+
+#education .bubbles img:nth-child(6)
+{
+    animation-delay: 6s;
+    width: 20px;
+}
+
+#education .bubbles img:nth-child(7)
+{
+    animation-delay: 7s;
+    width: 35px;
+}
+
+#education .container .row:hover
+{
+    background-color: #00808088;
+    transition: 0.5s ease-in-out;
+}
+
+#education .container h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+#education .container h4
+{
+    color: #00D0EC;
+}
+
+/* -----certification----- */
+#certification
+{
+    position: relative;
+}
+
+#certification .container
+{
+    position: absolute;
+    line-height: 100%;
+}
+
+#certification h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-weight: bolder;
+}
+
+#certification .container:nth-child(1)
+{
+    top: 25%;
+}
+
+#certification .container:nth-child(2)
+{
+    top: 50%;
+}
+
+#certification a
+{
+    color: #ffff00ff;
+}
+
+#certification a:hover
+{
+    color: #ffff00aa;
+}
+
+#certification h4
+{
+    color: #00E2FF;
+}
+
+#particles-js
+{
+    background-image: linear-gradient(#009688, #000000ff);
+    height: 1000px;
+}
