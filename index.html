@@ -17,38 +17,38 @@
     <script src="https://kit.fontawesome.com/09146724eb.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
 
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-                    // Store hash
-                    var hash = this.hash;
+                // Store hash
+                var hash = this.hash;
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
 
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
                 } // End if
             });
         });
     </script>
-
+    
     <title>Aldrin Saurov Sarker</title>
     <link rel="icon" href="images/logo.png">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-3 w-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-3">
         <div class="container-fluid text-uppercase">
             <a class="navbar-brand" href="#"><img src="images/logo.jpg"></a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
@@ -87,8 +87,11 @@
 
     <section id="about">
         <div class="container pb-5">
-            <div class="row d-table d-flex">
-                <div class="col col-md-6">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img class="dp img-fluid" src="images/profile.jpg" alt="">
+                </div>
+                <div class="grid-item">
                     <div class="card-title text-uppercase">Aldrin <span class="text-animate">Saurov</span> Sarker</div>
 
                     <div class="address mb-5">Mirpur, Dhaka-1216&ensp;|&ensp;
@@ -97,20 +100,16 @@
 
                     <div class="card-text">
                         <b class="text-primary">Hello World!</b>
-                        <p class="about-me">
-                            <br>I'm a student of Computer Science
-                            and Engineering at Khulna
-                            University. My journey began with structural programming and now I've achieved a lot of
-                            experiences in various fields too.<br><br>I am very interested in Artificial Intelligence
-                            and
-                            it's
-                            various fields, specially, Machine Learning and Deep Learning.<br><br>I love to write solid
-                            and
-                            neat code.
-                        </p>
+                        <br>I'm a student of Computer Science
+                        and Engineering at Khulna
+                        University. My journey began with structural programming and now I've achieved a lot of
+                        experiences in various fields too.<br><br>I am very interested in Artificial Intelligence and
+                        it's
+                        various fields, specially, Machine Learning and Deep Learning.<br><br>I love to write solid and
+                        neat code.
                     </div>
 
-                    <div class="social-links my-5">
+                    <div class="social-links mt-5">
                         <ul>
                             <li data-bs-toggle="popover" data-toggle="popover" data-trigger="hover">
                                 <a href="https://www.facebook.com/WiNterBoy180204/" target="_blank">
@@ -123,10 +122,11 @@
                                     <i class="fab fa-linkedin-in icon"></i>
                                 </a>
                             </li>
+                        </ul>
 
+                        <ul>
                             <li data-bs-toggle="popover" data-toggle="popover" data-trigger="hover">
-                                <a href="https://www.instagram.com/crystal_zatt/?fbclid=IwAR3yABVsQhYs09o2tvvDKPfjaBrM0XzPWRVleB55GdcXSrUv-ewGO_58i7M"
-                                    target="_blank">
+                                <a href="https://www.instagram.com/crystal_zatt/?fbclid=IwAR3yABVsQhYs09o2tvvDKPfjaBrM0XzPWRVleB55GdcXSrUv-ewGO_58i7M" target="_blank">
                                     <i class="fab fa-instagram icon"></i>
                                 </a>
                             </li>
@@ -140,9 +140,7 @@
                     </div>
                 </div>
 
-                <div class="col col-md-6">
-                    <img class="dp img-fluid" src="images/profile.jpg" alt="">
-                </div>
+                
             </div>
         </div>
     </section>
@@ -166,19 +164,19 @@
                 <span style="--i:2;"></span>
                 <span style="--i:3;"></span>
             </div>
-
+    
             <div class="glowing">
                 <span style="--i:1;"></span>
                 <span style="--i:2;"></span>
                 <span style="--i:3;"></span>
             </div>
-
+    
             <div class="glowing">
                 <span style="--i:1;"></span>
                 <span style="--i:2;"></span>
                 <span style="--i:3;"></span>
             </div>
-
+    
             <div class="glowing">
                 <span style="--i:1;"></span>
                 <span style="--i:2;"></span>
@@ -188,12 +186,12 @@
 
         <div class="container py-5">
             <h1 class="text-uppercase"><span>S</span>kills</h1>
-
+            
             <div class="row my-5 align-items-center proficient">
                 <div class="col-md-8">
                     <h4 class="text-uppercase">Proficient</h4>
                 </div>
-
+            
                 <div class="row d-block d-lg-flex align-items-center">
                     <div class="col">
                         <i class="devicon-python-plain"></i> Python
@@ -262,8 +260,7 @@
                         <div class="resume-content">
                             <h3 class="mb-0 text-uppercase">Treat Me</h3>
                             <h4 class="mb-3 text-uppercase">Team Leader & System Analyst</h4>
-                            <p class="text-light">A marketplace of restaurants where one can orders food for home
-                                delivery.</p>
+                            <p class="text-light">A marketplace of restaurants where one can orders food for home delivery.</p>
                         </div>
                         <div class="resume-date">
                             <a class="info" href="https://youtu.be/NSUfacCqIK0" target="_blank">
@@ -294,15 +291,15 @@
                             <h3 class="mb-0 text-uppercase">Calender Event Management</h3>
                             <h4 class="mb-3 text-uppercase">Team Leader & Main Programmer</h4>
                             <p class="text-light">
-                                A digital calender which can show date of any year and acts as an event reminder of any
-                                time.
+                               A digital calender which can show date of any year and acts as an event reminder of any time.
                             </p>
                         </div>
                         <div class="resume-date">
                             <a class="info" href="#" target="_blank">
                                 <i>Web Site</i>
                             </a>
-                            <span class="text-info float-end">C++ Graphics</span>
+                            <span
+                                class="text-info float-end">C++ Graphics</span>
                         </div>
                     </div>
 
@@ -311,14 +308,15 @@
                             <h3 class="mb-0 text-uppercase">Brain Booster</h3>
                             <h4 class="mb-3 text-uppercase">Personal Project</h4>
                             <p class="text-light">
-                                A game that can boost your brain, focus and concentration.
+                               A game that can boost your brain, focus and concentration.
                             </p>
                         </div>
                         <div class="resume-date">
                             <a class="info" href="https://fervent-blackwell-7824a5.netlify.app/" target="_blank">
                                 <i>Web Site</i>
                             </a>
-                            <span class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
+                            <span
+                                class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
                         </div>
                     </div>
 
@@ -327,15 +325,15 @@
                             <h3 class="mb-0 text-uppercase">Memory Game</h3>
                             <h4 class="mb-3 text-uppercase">Personal Project</h4>
                             <p class="text-light">
-                                Memorize, flip and match cards.
+                               Memorize, flip and match cards.
                             </p>
                         </div>
                         <div class="resume-date">
-                            <a class="info" href="https://musing-cray-17b13b.netlify.app/memory-game.html"
-                                target="_blank">
+                            <a class="info" href="https://musing-cray-17b13b.netlify.app/memory-game.html" target="_blank">
                                 <i>Web Site</i>
                             </a>
-                            <span class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
+                            <span
+                                class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
                         </div>
                     </div>
 
@@ -344,14 +342,15 @@
                             <h3 class="mb-0 text-uppercase">Minesweeper</h3>
                             <h4 class="mb-3 text-uppercase">Personal Project</h4>
                             <p class="text-light">
-                                Classic Minesweeper with a lots of themes.
+                               Classic Minesweeper with a lots of themes.
                             </p>
                         </div>
                         <div class="resume-date">
                             <a class="info" href="https://wonderful-pike-9eae35.netlify.app/" target="_blank">
                                 <i>Web Site</i>
                             </a>
-                            <span class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
+                            <span
+                                class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
                         </div>
                     </div>
 
@@ -367,7 +366,8 @@
                             <a class="info" href="https://gracious-mayer-426df4.netlify.app/" target="_blank">
                                 <i>Web Site</i>
                             </a>
-                            <span class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
+                            <span
+                                class="text-info float-end">HTML | CSS | Bootstrap | JS</span>
                         </div>
                     </div>
                 </div>
@@ -454,9 +454,7 @@
             <div class="container">
                 <h1 class="text-light text-uppercase"><span>O</span>thers</h1>
                 <h4 class="text-uppercase">
-                    Find me on <a href="https://codeforces.com/profile/WiNterBoy180204" target="_blank">Codeforces</a>
-                    and <a href="https://stackoverflow.com/users/14632202/aldrin-saurov-sarkers"
-                        target="_blank">StackOverFlow</a>
+                    Find me on <a href="https://codeforces.com/profile/WiNterBoy180204" target="_blank">Codeforces</a> and <a href="https://stackoverflow.com/users/14632202/aldrin-saurov-sarkers" target="_blank">StackOverFlow</a>
                 </h4>
             </div>
         </div>

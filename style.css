@@ -23,7 +23,10 @@ h1 span
 
 nav .nav-item
 {
-    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
     font-weight: 600;
     padding: 20px;
     font-family: "Arima Madurai";
@@ -31,7 +34,7 @@ nav .nav-item
 
 nav .navbar-brand img
 {
-    width: 12.5vw;
+    width: 150px;
     height: auto;
 }
 
@@ -175,33 +178,33 @@ nav .nav-item:nth-child(6) a:hover
     background-color: #212529;
 }
 
-#about .col:nth-child(1)
+#about .grid-item:nth-child(2)
 {
-    padding: 5% 5% 0 5%;
+    padding: 10%;
     background-color: #F8F9FA;
 }
 
-#about .col:nth-child(2)
+#about .grid-item:nth-child(1)
 {
     padding: 0;
 }
 
-#about .col:nth-child(2) .dp
+#about .grid-item:nth-child(1) .dp
 {
     max-width: 100%;
 }
 
-#about .col .card-title
+#about .grid-item .card-title
 {
     font-family: "Rancho";
-    font-size: 4.5vw;
+    font-size: 50px;
     font-weight: bolder;
 }
 
 #about .address
 {
     font-family: "Arima Madurai";
-    font-size: 1.5vw;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -217,42 +220,62 @@ nav .nav-item:nth-child(6) a:hover
     text-decoration: underline;
 }
 
-#about .col .card-text
+#about .grid-item .card-text
 {
     font-weight: 600;
 }
 
-#about .col .card-text b
+#about .grid-item .card-text b
 {
     font-family: "Satisfy";
-    font-size: 2.5vw;
-}
-
-#about .about-me {
-    font-size: 1vw;
+    font-size: 30px;
 }
 
 #about .social-links ul
 {
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: 0;
     margin-left: 0;
 }
 
+@media screen and (min-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    #about .social-links
+    {
+        display: flex;
+    }
+}
+
 #about .social-links ul li a
 {
-    width: 6vw;
-    height: 6vw;
+    width: 80px;
+    height: 80px;
     background-color: #fff;
     text-align: center;
-    line-height: 6vw;
-    font-size: 3vw;
-    margin: 0 1vw;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
     display: block;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    border: 0.25vw solid #aaa;
+    border: 3px solid #aaa;
     z-index: 1;
 }
 
@@ -283,6 +306,7 @@ nav .nav-item:nth-child(6) a:hover
     left: 0;
     width: 100%;
     height: 100%;
+    background: #f00;
     transition: .5s;
     z-index: 2;
 }
@@ -292,22 +316,22 @@ nav .nav-item:nth-child(6) a:hover
     top: 0;
 }
   
-#about .social-links ul li:nth-child(1) a:before
+#about .social-links ul:nth-child(1) li:nth-child(1) a:before
 {
     background: #3b5999;
 }
   
-#about .social-links ul li:nth-child(2) a:before
+#about .social-links ul:nth-child(1) li:nth-child(2) a:before
 {
     background: #0077b5;
 }
   
-#about .social-links ul li:nth-child(3) a:before
+#about .social-links ul:nth-child(2) li:nth-child(1) a:before
 {
     background: #BC2A8D;
 }
 
-#about .social-links ul li:nth-child(4) a:before
+#about .social-links ul:nth-child(2) li:nth-child(2) a:before
 {
     background: #262626;
 }
@@ -861,7 +885,7 @@ nav .nav-item:nth-child(6) a:hover
 #education .container h1
 {
     font-family: "Arima Madurai", cursive;
-    font-size: 4vw;
+    font-size: 48px;
     font-weight: bolder;
 }
 
@@ -886,6 +910,22 @@ nav .nav-item:nth-child(6) a:hover
 {
     font-family: "Arima Madurai", cursive;
     font-weight: bolder;
+}
+
+@media screen and (min-width: 0px)
+{
+    #certification h1
+    {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 500px)
+{
+    #certification h1
+    {
+        font-size: 48px;
+    }
 }
 
 #certification .container:nth-child(1)
