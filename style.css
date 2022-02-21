@@ -21,6 +21,13 @@ h1 span
     80%{ color: #2916d4;}
 }
 
+nav {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+}
+
 nav .nav-item
 {
     display: flex;
@@ -141,32 +148,32 @@ nav .nav-item a:hover
     transition: all 0.2s ease;
 }
 
-nav .nav-item:nth-child(1) a:hover
+nav .nav-item:nth-child(1) a:hover, nav .nav-item:nth-child(1) .active
 {
     color: #FFC107 !important;
 }
 
-nav .nav-item:nth-child(2) a:hover
+nav .nav-item:nth-child(2) a:hover, nav .nav-item:nth-child(2) .active
 {
     color: #DC3545 !important;
 }
 
-nav .nav-item:nth-child(3) a:hover
+nav .nav-item:nth-child(3) a:hover, nav .nav-item:nth-child(3) .active
 {
     color: #0D6EFD !important;
 }
 
-nav .nav-item:nth-child(4) a:hover
+nav .nav-item:nth-child(4) a:hover, nav .nav-item:nth-child(4) .active
 {
     color: #198754 !important;
 }
 
-nav .nav-item:nth-child(5) a:hover
+nav .nav-item:nth-child(5) a:hover, nav .nav-item:nth-child(5) .active
 {
     color: #6C757D !important;
 }
 
-nav .nav-item:nth-child(6) a:hover
+nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
 {
     color: #00E0EC !important;
 }
@@ -176,6 +183,7 @@ nav .nav-item:nth-child(6) a:hover
 {
     width: 100%;
     background-color: #212529;
+    padding-top: 20vh;
 }
 
 #about .grid-item:nth-child(2)
@@ -254,11 +262,19 @@ nav .nav-item:nth-child(6) a:hover
     }
 }
 
-@media screen and (min-width: 1000px)
+@media screen and (min-width: 800px)
 {
     #about .social-links
     {
         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .resume-date {
+        display: grid;
     }
 }
 
@@ -365,119 +381,9 @@ nav .nav-item:nth-child(6) a:hover
     padding-bottom: 15%;
 }
 
-#projects .container .carousel
-{
-    background: #008080ff;
-    min-height: 300px;
-    padding: 15px;
-    max-width: 1000px;
-}
-#projects .container .carousel .resume-date {
-    position: relative;
-}
-
-#projects .container .carousel .resume-date a
-{
-    color: #F5F5F5;
-    font-size: 22px;
-    font-weight: 600;
-    text-decoration: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#projects .container .carousel .resume-date a:hover {
-    color: #FFC107;
-}
-
-#projects .container .carousel .carousel-control-prev span
-{
-    background-color: red;
-    border: red 1px solid;
-    border-radius: 50%;
-}
-
-#projects .container .carousel .carousel-control-next span
-{
-    background-color: red;
-    border: red 1px solid;
-    border-radius: 50%;
-}
-
-@media screen and (min-width: 500px)
-{
-    #projects .container .carousel .carousel-control-prev span
-    {
-        transform: translateX(-10px);
-    }
-
-    #projects .container .carousel .carousel-control-next span
-    {
-        transform: translateX(10px);
-    }
-}
-
-@media screen and (min-width: 750px)
-{
-    #projects .container .carousel .carousel-control-prev span
-    {
-        transform: translateX(-20px);
-    }
-
-    #projects .container .carousel .carousel-control-next span
-    {
-        transform: translateX(20px);
-    }
-}
-
-@media screen and (min-width: 1000px)
-{
-    #projects .container .carousel .carousel-control-prev span
-    {
-        transform: translateX(-30px);
-    }
-
-    #projects .container .carousel .carousel-control-next span
-    {
-        transform: translateX(30px);
-    }
-}
-
-@media screen and (min-width: 1250px)
-{
-    #projects .container .carousel .carousel-control-prev span
-    {
-        transform: translateX(-40px);
-    }
-
-    #projects .container .carousel .carousel-control-next span
-    {
-        transform: translateX(40px);
-    }
-}
-
-#projects .container .carousel .carousel-indicators li
-{
-    height: 5px;
-    background-color: #00D0EC;
-}
-
-#projects .container .carousel .carousel-indicators .active
-{
-    background-color: #555;
-}
-
-#projects .container .carousel h3
-{
-    color: #00D0EC;
-    font-family: "Arima Madurai";
-    font-weight: 800;
-}
-
-#projects .container .carousel p
-{
-    font-family: 'Overlock', cursive;
+#projects .container .resume-date span {
+    display: flex;
+    align-items: center;
 }
 
 #projects .grid-container {
@@ -496,6 +402,7 @@ nav .nav-item:nth-child(6) a:hover
     width: 100%;
     background-color: #212529;
     overflow: hidden;
+    padding-top: 10vh;
 }
 
 #skills .container .col:hover
@@ -703,7 +610,7 @@ nav .nav-item:nth-child(6) a:hover
     color: #f5f5f5;
     position: relative;
     overflow: hidden;
-    padding: 10px;
+    padding: 20vh 10px 10px 10px;
 }
 
 #education .bubbles
@@ -884,4 +791,5 @@ nav .nav-item:nth-child(6) a:hover
 {
     background-image: linear-gradient(#009688, #000000ff);
     height: 200vh;
+    padding-top: 20vh;
 }
