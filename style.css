@@ -796,5 +796,5 @@ nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
 
 video {
     width: 100%;
-    max-height: 50vh;
+    max-height: 25vh;
 }
