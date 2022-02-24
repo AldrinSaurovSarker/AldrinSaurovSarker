@@ -794,6 +794,12 @@ nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
     padding-top: 20vh;
 }
 
+<<<<<<< HEAD
 video, iframe {
     height: 50vh;
 }
+=======
+video {
+    height: 50vh;
+}
+>>>>>>> e249f666bb343b4c13d61ff8339aec65354c16e7
