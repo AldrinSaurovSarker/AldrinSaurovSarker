@@ -33,7 +33,7 @@ nav .nav-item
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     padding: 20px;
     font-family: "Arima Madurai";
@@ -178,6 +178,11 @@ nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
     color: #00E0EC !important;
 }
 
+nav .nav-item:nth-child(7) a:hover, nav .nav-item:nth-child(7) .active
+{
+    color: #ec00e0 !important;
+}
+
 /* -----About------ */
 #about
 {
@@ -280,13 +285,13 @@ nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
 
 #about .social-links ul li a
 {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: #fff;
     text-align: center;
-    line-height: 80px;
-    font-size: 35px;
-    margin: 0 10px;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 0 7px;
     display: block;
     border-radius: 50%;
     position: relative;
@@ -325,6 +330,7 @@ nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
     background: #f00;
     transition: .5s;
     z-index: 2;
+    border-radius: 50%;
 }
   
 #about .social-links ul li a:hover:before
@@ -350,6 +356,16 @@ nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
 #about .social-links ul:nth-child(2) li:nth-child(2) a:before
 {
     background: #262626;
+}
+
+#about .social-links ul:nth-child(3) li:nth-child(1) a:before
+{
+    background: #F48225;
+}
+
+#about .social-links ul:nth-child(3) li:nth-child(2) a:before
+{
+    background: #1D9BF0;
 }
 
 #about .social-links ul li
@@ -393,6 +409,29 @@ nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
 
 #projects .grid-item video {
     width: 100%;
+}
+
+/* -----tooltips----- */
+a.info:hover {
+    position: relative;
+}
+
+a.info span {
+    display: none !important;
+}
+
+a.info:hover span {
+    text-align: center;
+    display: block !important;
+    z-index: 100;
+    background: #343A40;
+    color: #FAFAFA;
+    left: 0px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 40px;
+    text-decoration: none;
 }
 
 /* -----skills----- */
@@ -719,13 +758,7 @@ nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
 /* -----certification----- */
 #certification
 {
-    position: relative;
-    height: max-content;
-}
-
-#certification .container-fluid
-{
-    position: absolute;
+    background-image: linear-gradient(#009688, #000000ff);
 }
 
 #certification h1
@@ -787,13 +820,13 @@ nav .nav-item:nth-child(6) a:hover, nav .nav-item:nth-child(6) .active
     margin-right: 15px;
 }
 
-#particles-js
-{
-    background-image: linear-gradient(#009688, #000000ff);
-    height: 200vh;
-    padding-top: 20vh;
-}
-
 video, iframe {
     height: 50vh;
+}
+
+/*****Extra*****/
+#extra {
+    padding-top: 10vh;
+    min-height: 100vh;
+    background-color: #212529;
 }

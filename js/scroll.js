@@ -33,9 +33,11 @@ function navHighlighter() {
         .querySelector("nav a[href*=" + sectionId + "]")
         .classList.add("active");
     } else {
-      document
-        .querySelector("nav a[href*=" + sectionId + "]")
-        .classList.remove("active");
+      try {
+        document
+          .querySelector("nav a[href*=" + sectionId + "]")
+          .classList.remove("active");
+      } catch {}
     }
   });
 }
