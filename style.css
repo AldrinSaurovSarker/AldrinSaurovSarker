@@ -763,7 +763,6 @@ a.info:hover span {
 
 #certification h1
 {
-    padding-left: 8vw;
     font-family: "Arima Madurai", cursive;
     font-weight: bolder;
 }
@@ -794,7 +793,12 @@ a.info:hover span {
     color: #ffff00aa;
 }
 
-#certification h4
+#certification .container h3
+{
+    color: #00D0EC;
+}
+
+#certification .container h4
 {
     color: #2b838f;
 }
@@ -829,4 +833,10 @@ video, iframe {
     padding-top: 10vh;
     min-height: 100vh;
     background-color: #212529;
+}
+
+#extra h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-weight: bolder;
 }
