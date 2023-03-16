@@ -1,0 +1,241 @@
+#about
+{
+    width: 100%;
+    background-color: #212529;
+    padding-top: 20vh;
+}
+
+#about .grid-item:nth-child(2)
+{
+    padding: 10%;
+    background-color: #F8F9FA;
+}
+
+#about .grid-item:nth-child(1)
+{
+    padding: 0;
+}
+
+#about .grid-item:nth-child(1) .dp
+{
+    max-width: 100%;
+}
+
+#about .grid-item .card-title
+{
+    font-family: "Rancho";
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#about .address
+{
+    font-family: "Arima Madurai";
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#about .address a
+{
+    color: #10a1b4;
+    text-decoration: none;
+}
+
+#about .address a:hover
+{
+    color: #0077b5;
+    text-decoration: underline;
+}
+
+#about .grid-item .card-text
+{
+    font-weight: 600;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#about .grid-item .card-text b
+{
+    font-family: "Satisfy";
+    font-size: 30px;
+}
+
+#about .social-links ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+@media screen and (min-width: 991px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    #about .social-links .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 353px) {
+    #about .social-links .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    #about .social-links .grid-container {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #skills .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    #about .social-links
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .resume-date {
+        display: grid;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    #about .social-links .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #about .social-links .grid-container {
+        display: flex;
+        grid-gap: 0px;
+    }
+}
+
+#about .social-links ul li a
+{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 0 7px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #aaa;
+    z-index: 1;
+}
+
+#about .social-links ul li a:hover
+{
+    border: 3px solid #fff;
+}
+  
+#about .social-links ul li a .icon
+{
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+  
+#about .social-links ul li a:hover .icon
+{
+    color: #fff;
+    transform: rotateY(360deg);
+}
+  
+#about .social-links ul li a:before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+    border-radius: 50%;
+}
+  
+#about .social-links ul li a:hover:before
+{
+    top: 0;
+}
+  
+#about .social-links ul li:nth-child(1) a:before
+{
+    background: #3b5999;
+}
+  
+#about .social-links ul li:nth-child(2) a:before
+{
+    background: #0077b5;
+}
+  
+#about .social-links ul li:nth-child(3) a:before
+{
+    background: #BC2A8D;
+}
+
+#about .social-links ul li:nth-child(4) a:before
+{
+    background: #262626;
+}
+
+#about .social-links ul li:nth-child(5) a:before
+{
+    background: #F48225;
+}
+
+#about .social-links ul li:nth-child(6) a:before
+{
+    background: #1D9BF0;
+}
+
+#about .social-links ul li
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dp {
+    height: 100%;
+}

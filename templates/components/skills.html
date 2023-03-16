@@ -1,0 +1,65 @@
+{% load static %}
+
+<section id="skills">
+    <div class="background">
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <h1 class="text-uppercase"><span>S</span>kills</h1>
+
+        {% if skills %}
+        {% for skillSet in skills %}
+            <div class="row my-5 align-items-center familiar">
+                <div class="col-md-8">
+                    <h4 class="text-uppercase">{{skillSet.0.level}}</h4>
+                </div>
+
+                <div class="row d-grid grid-container align-items-center skill-list">
+                    {% for skill in skillSet %}
+                        <div class="col">
+                            <i class="{{skill.icon}}"></i>{{skill.name}}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <h4 class="text-uppercase">No skills to show.</h4>
+        {% endif %}
+    </div>
+</section>

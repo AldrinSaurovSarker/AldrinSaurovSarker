@@ -1,0 +1,113 @@
+#education
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/images/background.png);
+    background-position: center;
+    background-size: cover;
+    color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+    padding: 20vh 10px 10px 10px;
+}
+
+#education .bubbles
+{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: -70px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#education .bubbles img
+{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+#education .col {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes bubble
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%
+    {
+        opacity: 1;
+    }
+
+    75%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+}
+
+#education .bubbles img:nth-child(1)
+{
+    animation-delay: 2s;
+    width: 25px;
+}
+
+#education .bubbles img:nth-child(2)
+{
+    animation-delay: 1s;
+}
+
+#education .bubbles img:nth-child(3)
+{
+    animation-delay: 3s;
+    width: 25px;
+}
+
+#education .bubbles img:nth-child(4)
+{
+    animation-delay: 4.5s;
+}
+
+#education .bubbles img:nth-child(5)
+{
+    animation-delay: 3s;
+}
+
+#education .bubbles img:nth-child(6)
+{
+    animation-delay: 6s;
+    width: 20px;
+}
+
+#education .bubbles img:nth-child(7)
+{
+    animation-delay: 7s;
+    width: 35px;
+}
+
+#education .container .row:hover
+{
+    background-color: #00808088;
+    transition: 0.5s ease-in-out;
+}
+
+#education .container h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#education .container h4
+{
+    color: #00D0EC;
+}

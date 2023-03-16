@@ -1,0 +1,47 @@
+#experience
+{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), #009688), url(/static/images/exp.jpeg);
+    background-position: center;
+    background-size: cover; */
+    background-color: #212529;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#experience h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#experience h4
+{
+    color: #00e2ff;
+}#experience
+{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), #009688), url(/static/images/exp.jpeg);
+    background-position: center;
+    background-size: cover; */
+    background-color: #212529;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#experience h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#experience h4
+{
+    color: #00e2ff;
+}

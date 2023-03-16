@@ -1,0 +1,64 @@
+{% load static %}
+
+<section id="projects">
+    <div class="container">
+        <h1 class="text-light text-uppercase"><span>P</span>rojects</h1>
+        {% if projects %}
+            {% for projectList in projects %}
+                <div class="collapsible">
+                    <input type="checkbox" id="{{projectList.0.ptype}}">
+                    <label for="{{projectList.0.ptype}}">
+                        <h4 class="text-uppercase collapsible-banner">
+                            <span>{{projectList.0.ptype}}</span>
+                            <span class="float-end me-5">{{projectList.count}} Project{% if projectList.count != 1 %}s{% endif %}</span>
+                        </h4>
+                    </label>
+                    
+                    <div class="grid-container collapsible-text">
+                        {% for project in projectList %}
+                            <div class="grid-item d-grid">
+                                <div class="thumbnail">
+                                    {% if project.video %}
+                                        <video src="{{project.video.url}}" autoplay muted loop></video>
+                                    {% else %}
+                                        <iframe src="{{project.href}}" allowfullscreen class="w-100"></iframe>
+                                    {% endif %}
+                                </div>
+
+                                <div class="resume-content p-3">
+                                    <h2 class="mb-0 text-uppercase fw-bold">{{project.name}}</h2>
+                                    <h5 class="mb-3 text-uppercase text-muted">{{project.bio}}</h5>
+
+                                    {% if project.role %}
+                                        <h6 class="mb-3 text-uppercase text-info">{{project.role}}</h6>
+                                    {% endif %}
+
+                                    <p class="text-success">
+                                        {{project.desc}}
+                                    </p>
+                                </div>
+
+                                <div class="resume-date p-3">
+                                    <div class="d-flex">
+                                        {% for url in project.project_urls_set.all %}
+                                            <a class="info pe-2" href="{{url.link}}" target="_blank">
+                                                <div class="btn btn-outline-{{url.background}}">
+                                                    <i class="{{url.icon}}"></i>
+                                                </div>
+                                                <span>{{url.name}}</span>
+                                            </a>
+                                        {% endfor %}
+                                    </div>
+
+                                    <span class="text-primary float-end">{{project.tools}}</span>
+                                </div>
+                            </div>
+                        {% endfor %}<br>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h4 class="text-uppercase">No Projects Available.</h4>
+        {% endif %}
+    </div>
+</section>

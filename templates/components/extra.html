@@ -1,0 +1,18 @@
+{% load static %}
+
+<section id="extra">
+    <div class="container py-5">
+        <h1 class="text-uppercase text-light"><span>E</span>xtra Curriculam Activities</h1>
+
+        {% if extras %}
+            {% for extra in extras %}
+                <div class="activities ">
+                    <i class="fas fa-trophy text-info"></i>
+                    <span class="text-light ps-2">{{extra.detail}}</span>
+                </div><br>
+            {% endfor %}
+        {% else %}
+            <h4 class="text-uppercase">Nothing to show.</h4>
+        {% endif %}
+    </div>
+</section>

@@ -1,0 +1,48 @@
+#projects
+{
+    background-color: #212529;
+    backface-visibility: hidden;
+}
+
+#projects h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#projects .container
+{
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+#projects .container .resume-date span {
+    display: flex;
+    align-items: center;
+}
+
+#projects .container h4
+{
+    color: #00D0EC;
+    font-family: "Arima Madurai", cursive;
+    font-weight: bolder;
+}
+
+
+#projects .grid-container {
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-bottom: 10px;
+}
+
+#projects .grid-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #ccc;
+}
+
+#projects .grid-item video {
+    width: 100%;
+}

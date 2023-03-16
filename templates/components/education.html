@@ -1,0 +1,36 @@
+{% load static %}
+
+<section id="education">
+    <div class="container py-5">
+        <h1 class="text-uppercase"><span>E</span>ducation</h1>
+        {% if educations %}
+            {% for education in educations %}
+                <div class="row my-5">
+                    <div class="col-md-8">
+                        <h4 class="text-uppercase">{{education.institution}}</h4>
+                        <h6 class="text-uppercase">{{education.degree}}</h6><br>
+                        <p>{{education.subject}}</p>
+                        <p>{{education.board}}</p>
+                        <i>{{education.result}}</i>
+                    </div>
+
+                    <div class="col">
+                        <h6>{{education.duration}}</h6>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h4 class="text-uppercase">Nothing to show.</h4>
+        {% endif %}
+    </div>
+
+    <div class="bubbles">
+        <img src="{% static 'images/bubble.png' %}" alt="bubble">
+        <img src="{% static 'images/bubble.png' %}" alt="bubble">
+        <img src="{% static 'images/bubble.png' %}" alt="bubble">
+        <img src="{% static 'images/bubble.png' %}" alt="bubble">
+        <img src="{% static 'images/bubble.png' %}" alt="bubble">
+        <img src="{% static 'images/bubble.png' %}" alt="bubble">
+        <img src="{% static 'images/bubble.png' %}" alt="bubble">
+    </div>
+</section>

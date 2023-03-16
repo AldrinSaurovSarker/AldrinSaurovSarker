@@ -1,0 +1,38 @@
+{% load static %}
+
+<section id="certification">
+    <div class="container py-5">
+        <h1 class="text-light text-uppercase"><span>C</span>ertifications</h1>
+
+        {% if certificates %}
+            {% for certificateList in certificates %}
+                <div class="collapsible">
+                    <input type="checkbox" id="{{certificateList.0.provider}}">
+                    <label for="{{certificateList.0.provider}}">
+                        <h4 class="text-uppercase collapsible-banner">
+                            <span>{{certificateList.0.provider}}</span>
+                            <span class="float-end me-5">{{certificateList.count}} Certificate{% if certificateList.count != 1 %}s{% endif %}</span>
+                        </h4>
+                    </label>
+
+                    <div class="grid-container collapsible-text">
+                        {% for certificate in certificateList %}
+                            <div class="grid-item text-dark d-lg-flex">
+                                <img src="{{certificate.img.url}}" alt="{{certificate.provider}} logo" class="img-thumbnail">
+                                <div class="details">
+                                    <h3>{{certificate.name}}</h3>
+                                    <p>{{certificate.provider}}</p>
+                                    <p class="text-muted">{{certificate.issued}}</p>
+                                    <a href="{{certificate.link}}" target="_blank"
+                                        class="btn btn-info text-light">View</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h4 class="text-uppercase">Nothing to show.</h4>
+        {% endif %}
+    </div>
+</section>

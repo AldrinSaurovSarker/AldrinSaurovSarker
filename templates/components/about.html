@@ -1,0 +1,70 @@
+{% load static %}
+
+<section id="about">
+    <div class="container pb-5">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="dp img-fluid" src="{{profile.img.url}}" alt="">
+            </div>
+            <div class="grid-item">
+                <div class="card-title text-uppercase">{{name.0}} <span class="text-animate">{{name.1}}</span> {{name.2}}</div>
+
+                <div class="address mb-5">{{profile.address}}&ensp;|&ensp;
+                    <a href="mailto:a.saurov2016@gmail.com">{{profile.email}}</a>
+                </div>
+
+                <div class="card-text">
+                    <b class="text-primary">{{profile.tagline}}</b>
+                    <br>I'm a student of Computer Science
+                    and Engineering at Khulna
+                    University. My journey began with structural programming and now I've achieved a lot of
+                    experiences in various fields too.<br><br>I am very interested in Artificial Intelligence. Currently I'm working as a fullstack software engineer.<br><br>I love to write solid and
+                    neat code.
+                </div>
+
+                <div class="social-links mt-5">
+                    <ul class="grid-container">
+                        <li data-bs-toggle="popover" data-toggle="popover" data-trigger="hover">
+                            <a href="https://www.facebook.com/WiNterBoy180204/" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook-f icon"></i>
+                            </a>
+                        </li>
+
+                        <li data-bs-toggle="popover" data-toggle="popover" data-trigger="hover">
+                            <a href="https://www.linkedin.com/in/aldrin-saurov-sarker/" target="_blank"
+                                title="LinkedIn">
+                                <i class="fab fa-linkedin-in icon"></i>
+                            </a>
+                        </li>
+
+                        <li data-bs-toggle="popover" data-toggle="popover" data-trigger="hover">
+                            <a href="https://www.instagram.com/crystal_zatt/?fbclid=IwAR3yABVsQhYs09o2tvvDKPfjaBrM0XzPWRVleB55GdcXSrUv-ewGO_58i7M"
+                                target="_blank" title="Instagram">
+                                <i class="fab fa-instagram icon"></i>
+                            </a>
+                        </li>
+
+                        <li data-bs-toggle="popover" data-toggle="popover" data-trigger="hover">
+                            <a href="https://github.com/AldrinSaurovSarker" target="_blank" title="Github">
+                                <i class="fab fa-github icon"></i>
+                            </a>
+                        </li>
+
+                        <li data-bs-toggle="popover" data-toggle="popover" data-trigger="hover">
+                            <a href="https://stackoverflow.com/users/14632202/aldrin-saurov-sarker" target="_blank"
+                                title="Stackoverflow">
+                                <i class="fab fa-stack-overflow icon"></i>
+                            </a>
+                        </li>
+
+                        <li data-bs-toggle="popover" data-toggle="popover" data-trigger="hover">
+                            <a href="https://twitter.com/AldrinSarker" target="_blank" title="Twitter">
+                                <i class="fab fa-twitter icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

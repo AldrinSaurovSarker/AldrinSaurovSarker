@@ -1,0 +1,68 @@
+#certification
+{
+    background-image: linear-gradient(#009688, #000000ff);
+}
+
+#certification h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 0px)
+{
+    #certification h1
+    {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 500px)
+{
+    #certification h1
+    {
+        font-size: 48px;
+    }
+}
+
+#certification a
+{
+    color: #ffff00ff;
+}
+
+#certification a:hover
+{
+    color: #ffff00aa;
+}
+
+#certification .container h4
+{
+    color: #00D0EC;
+    font-family: "Arima Madurai", cursive;
+    font-weight: bolder;
+}
+
+#certification .container h3
+{
+    color: #2b838f;
+}
+
+#certification .grid-container {
+    width: 100%;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-bottom: 10px;
+}
+
+#certification .grid-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #ccc;
+}
+
+#certification .grid-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}

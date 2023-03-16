@@ -1,0 +1,47 @@
+**SETTING UP VIRTUAL ENVIRONMENT**
+
+    [1] Go to a directory where the project should be saved.
+    [2] Open command promp.
+    [3] Type `pip install virtualenvwrapper-win`, and then `mkvirtualenv [ENVIRONMENT NAME]` to create a virtual environment.
+
+
+**RUN IN LOCAL SERVER**
+
+    [1] Download the repository from [https://github.com/AldrinSaurovSarker/AldrinSaurovSarker/archive/refs/heads/master.zip](https://github.com/AldrinSaurovSarker/AldrinSaurovSarker/archive/refs/heads/master.zip)
+    [2] Paste the folder where virtual environment were setup earlier.
+    [3] Open the folder in `Virtual Studio Code`.
+    [4] Open terminal and type the following command `pip install -r requirements.txt`.
+    [5] Install mysql workbench with
+        [i] user: root
+        [ii] password: 1234
+        [iii] DB name: AldrinSaurovSarker
+        
+    [6] Paste the queries in the `Data.sql` file in the workbench, and execute it.
+
+    [7] Run the following commands in the terminal.
+        [i] `python manage.py makemigrations`
+        [ii] `python manage.py migrate`
+
+    [8] Run the software using `python manage.py runserver`, and observe the output at `127.0.0.1:8000`.
+
+
+**SWITCH DATABASE**
+    
+    [1] Go to `portfolio/settings.py` file.
+    [2] Find the constant named `DATABASES`, and change the followings.
+        [i]   ENGINE  : django.db.backends.`database name`
+                    For example, to use `PostgreSQL`, `django.db.backends.postgresql`.
+                    Note that dependent library should be installed. ([mysqlclient] for mysql, [psycopg2] for postgresql)
+        [ii]  NAME    : Put the database name.
+        [iii] USER    : Put the username of the database.
+        [iv]  PASSWORD: Put the password associated with the user.
+        [v]   HOST    : Put the host name. To run on local computer, just write `localhost`.
+    [3] Copy the contents from the `Data.sql` file, and execute the commands in MySQL `workbench`.
+
+
+**PUSH TO GITHUB (USING `GITHUB DESKTOP`)**
+
+    [1] Open `Github desktop`.
+    [2] Go to `File` -> `Clone repository`.
+    [3] Select `AldrinSaurovSarker/AldrinSaurovSarker`, add a local path (default: C:\Users\ `user name`\Documents\Github\AldrinSaurovSarker), and click `Clone`.
+    [4] Go to the local path, and copy-paste all files from the project folder inside.

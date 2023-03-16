@@ -1,0 +1,179 @@
+#skills
+{
+    color: #F5F5F5;
+    width: 100%;
+    background-color: #212529;
+    overflow: hidden;
+    padding-top: 10vh;
+}
+
+#skills .container .col:hover
+{
+    background-color: #00808088;
+    transition: 0.5s ease-in-out;
+}
+
+#skills .container h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#skills .container h4
+{
+    color: #00D0EC;
+    font-family: "Arima Madurai", cursive;
+    font-weight: bolder;
+}
+
+#skills .container .col
+{
+    font-size: 22px;
+    font-family: "Overlock", cursive;
+    margin: 10px;
+    padding: 10px;
+}
+
+#skills .container .col i
+{
+    border: 1px solid #00D0EC;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#skills .container .familiar .col i
+{
+    color: #00D0EC;
+    border: 1px solid #F5F5F5;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#skills .background
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .glowing
+{
+    position: relative;
+    min-width: 750px;
+    margin: -150px;
+    transform-origin: right;
+    animation: colorChange 5s linear infinite;
+}
+
+#skills .glowing:nth-child(even)
+{
+    transform-origin: left;
+}
+
+@keyframes colorChange
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#skills .glowing span
+{
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+}
+
+#skills .glowing span:before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background-color: #F00;
+    border-radius: 50%;
+}
+
+#skills .glowing span:nth-child(3n + 1):before
+{
+    background: rgba(134, 255, 0, 1);
+    box-shadow: 0 0 20px rgba(134, 255, 0, 1),
+                0 0 40px rgba(134, 255, 0, 1),
+                0 0 60px rgba(134, 255, 0, 1),
+                0 0 80px rgba(134, 255, 0, 1),
+                0 0 0 8px rgba(134, 255, 0, 0.1);
+}
+
+#skills .glowing span:nth-child(3n + 2):before
+{
+    background: rgba(255, 214, 0, 1);
+    box-shadow: 0 0 20px rgba(255, 214, 0, 1),
+                0 0 40px rgba(255, 214, 0, 1),
+                0 0 60px rgba(255, 214, 0, 1),
+                0 0 80px rgba(255, 214, 0, 1),
+                0 0 0 8px rgba(255, 214, 0, 0.1);
+}
+
+#skills .glowing span:nth-child(3n + 3):before
+{
+    background: rgba(0, 226, 255, 1);
+    box-shadow: 0 0 20px rgba(0, 226, 255, 1),
+                0 0 40px rgba(0, 226, 255, 1),
+                0 0 60px rgba(0, 226, 255, 1),
+                0 0 80px rgba(0, 226, 255, 1),
+                0 0 0 8px rgba(0, 226, 255, 0.1);
+}
+
+#skills .glowing span:nth-child(3n + 1)
+{
+    animation: animate 10s alternate infinite;
+}
+
+#skills .glowing span:nth-child(3n + 2)
+{
+    animation: animate-reverse 3s alternate infinite;
+}
+
+#skills .glowing span:nth-child(3n + 3)
+{
+    animation: animate 8s alternate infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-reverse
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}

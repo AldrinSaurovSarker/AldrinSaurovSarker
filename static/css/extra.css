@@ -1,0 +1,18 @@
+#extra {
+    padding-top: 10vh;
+    min-height: 100vh;
+    background-color: #212529;
+}
+
+#extra h1
+{
+    font-family: "Arima Madurai", cursive;
+    font-weight: bolder;
+}
+
+#extra .container h4
+{
+    color: #00D0EC;
+    font-family: "Arima Madurai", cursive;
+    font-weight: bolder;
+}
