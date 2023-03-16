@@ -80,9 +80,10 @@ video, iframe {
     content: "";
     position: absolute;
     right: 15px;
-    top: 15px;
-    width: 18px;
-    height: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
     background-image: url(/static/images/arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +92,7 @@ video, iframe {
 }
 
 .collapsible input:checked + label:after {
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateX(-50%);
 }
 
 .collapsible-text {
@@ -100,16 +101,21 @@ video, iframe {
     border-radius: 4px;
     line-height: 1.4;
     position: relative;
-    top: -100%;
-    opacity: 0.5;
-    transition: all 0.5s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 1s ease-in-out;
+    margin-bottom: 0;
 }
 
 .collapsible input:checked ~ .collapsible-text {
     max-height: max-content;
     opacity: 1;
-    top: 0;
+    transform: translateY(0%);
     margin-bottom: 100px !important;
+}
+
+.collapsible input:not(:checked) ~ .collapsible-text {
+    transition: transform 0.5s ease-out;
 }
 
 @media screen and (max-width: 767px)
