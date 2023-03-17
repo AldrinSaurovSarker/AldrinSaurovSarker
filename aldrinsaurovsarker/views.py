@@ -36,5 +36,4 @@ def index(request):
         'experiences':experiences,
         'projects':projects
     }
-    
     return render(request, 'index.html', context)
