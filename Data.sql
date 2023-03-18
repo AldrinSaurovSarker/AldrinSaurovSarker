@@ -70,3 +70,6 @@ INSERT INTO `aldrinsaurovsarker_project_urls` VALUES
 (13,'Github','https://github.com/AldrinSaurovSarker/Web-Games/tree/main/Rock%20Paper%20Scissor','fab fa-github','dark',7),
 (14,'Github','https://github.com/AldrinSaurovSarker/MayMaCare','fab fa-github','dark',8),
 (15,'Website','http://maymacare.com.au/','fas fa-link','info',8);
+
+INSERT INTO `aldrinsaurovsarker_experiences` VALUES
+(1, 'Dohatec New Media', 'Dhaka, Bangladesh', 'Software Engineer', 'March 2023 - Current', 'Currently working as a backend developer on project "e-PMIS", tendered by the Government of Bangladesh.');

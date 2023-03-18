@@ -17,7 +17,6 @@ class Profile(models.Model):
         return self.name
 
 
-
 class Skills(models.Model):
     levelChoice = [
         ('Language', 'Language'),
@@ -81,7 +80,7 @@ class Experiences(models.Model):
         verbose_name_plural = "Experiences"
 
     def __str__(self):
-        return self.name
+        return self.company_name
 
 
 class Projects(models.Model):
