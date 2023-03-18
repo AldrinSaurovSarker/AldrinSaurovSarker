@@ -4,11 +4,27 @@
     <div class="container">
         <div class="row">
             <h1 class="text-light text-uppercase"><span>E</span>xperience</h1>
-
-            {% if experiences %}
             
+            {% if experiences %}
+                {% for experience in experiences %}
+                    <div class="row my-5 row-ex">
+                        <div class="d-flex">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h4 class="card-title text-uppercase">{{experience.company_name}}</h4>
+                                    <h6 class="card-subtitle mb-2 fw-bold text-uppercase">{{experience.post}}</h6>
+                                    <p class="card-text text-white py-5">{{experience.desc}}</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                <h6 class="text-white">{{experience.duration}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
             {% else %}
-                <h4 class="text-uppercase">No job experiences yet.</h4>
+            <h4 class="text-uppercase">No job experiences yet.</h4>
             {% endif %}
         </div>
     </div>
