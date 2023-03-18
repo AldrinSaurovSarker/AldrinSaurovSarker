@@ -15,11 +15,10 @@
 
                 <div class="card-text">
                     <b class="text-primary">{{profile.tagline}}</b>
-                    <br>I'm a student of Computer Science
-                    and Engineering at Khulna
-                    University. My journey began with structural programming and now I've achieved a lot of
-                    experiences in various fields too.<br><br>I am very interested in Artificial Intelligence. Currently I'm working as a fullstack software engineer.<br><br>I love to write solid and
-                    neat code.
+
+                    {% for aboutblock in about %}
+                        <br>{{aboutblock}}<br>
+                    {% endfor %}
                 </div>
 
                 <div class="social-links mt-5">

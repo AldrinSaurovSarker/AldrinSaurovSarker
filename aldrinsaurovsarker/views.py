@@ -1,11 +1,10 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
 from .models import *
 
-# Create your views here.
 def index(request):
     profile = get_object_or_404(Profile, id=1)
     name = profile.name.split()
+    about = profile.about.split('♥')
 
     skillType = {item[0] for item in list(set(Skills.objects.order_by('level').values_list('level')))}
     skills = []
@@ -18,9 +17,7 @@ def index(request):
         certificates.append(Certificates.objects.filter(provider=provider))
 
     extras = Extras.objects.all()
-
     experiences = Experiences.objects.all()
-    
     educations = Educations.objects.all()
     
     projectSet = {item[0] for item in list(set(Projects.objects.values_list('ptype')))}
@@ -31,12 +28,12 @@ def index(request):
     context = {
         'profile':profile,
         'name':name,
+        'about':about,
         'skills':skills,
         'certificates':certificates,
         'extras':extras,
         'educations':educations,
         'experiences':experiences,
         'projects':projects
-        }
-    
+    }
     return render(request, 'index.html', context)
