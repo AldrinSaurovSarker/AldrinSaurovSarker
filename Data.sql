@@ -20,7 +20,11 @@ INSERT INTO `aldrinsaurovsarker_extras` VALUES
 (4,'Managed, controlled, and led a large team of 60 volunteers in \"KU CSE Fest 2022\".');
 
 INSERT INTO `aldrinsaurovsarker_profile` VALUES
-(1,'Aldrin Saurov Sarker','pics/profile.jpg','a.saurov2016@gmail.com','Hello World!',"I\'m a student of Computer Science and Engineering at Khulna\r\n                        University. My journey began with structural programming and now I\'ve achieved a lot of\r\n                        experiences in various fields too.<br><br>I am very interested in Artificial Intelligence and\r\n                        it\'s\r\n                        different fields, especially, Machine Learning and Deep Learning.<br><br>I love to write solid and\r\n                        neat code.",'Mirpur, Dhaka-1216','+880 1642-005775');
+(1,'Aldrin Saurov Sarker','pics/profile.jpg','a.saurov2016@gmail.com','Hello World!',"
+I'm a student of Computer Science and Engineering at Khulna University. ♥My journey began with structural 
+programming and now I've achieved a lot of experience in various fields too. I am very interested in Artificial 
+Intelligence and its different fields, especially, Machine Learning and Deep Learning. ♥I love to write solid 
+and neat code.",'Mirpur, Dhaka-1216','+880 1642-005775');
 
 INSERT INTO `aldrinsaurovsarker_skills` VALUES
 (1,'C','devicon-c-plain','Language'),
@@ -29,12 +33,16 @@ INSERT INTO `aldrinsaurovsarker_skills` VALUES
 (4,'JavaScript','devicon-javascript-plain','Language'),
 (5,'HTML5','devicon-html5-plain','Web Technology'),
 (6,'CSS3','devicon-css3-plain','Web Technology'),
-(7,'Bootstrap','devicon-bootstrap-plain','Framework'),
+(7,'Bootstrap','devicon-bootstrap-plain','Web Technology'),
 (8,'Django','devicon-django-plain','Framework'),
 (9,'Java','devicon-java-plain','Language'),
 (10,'Matlab','devicon-matlab-plain','Language'),
 (11,'PostgreSQL','devicon-postgresql-plain','Database'),
 (12,'MySQL','devicon-mysql-plain','Database');
+(13,'Tailwind','devicon-tailwindcss-original-wordmark','Web Technology'),
+(14,'Spring Boot','devicon-spring-plain','Framework'),
+(15,'PHP','devicon-php-plain','Language'),
+(16,'Redis','devicon-redis-plain','Database');
 
 INSERT INTO `aldrinsaurovsarker_projects` VALUES
 (1,'Treat Me','','https://youtube.com/embed/NSUfacCqIK0','Web Development Project Labwork','Web Applications','Team Leader & System Analyst','An online-based restaurant management system where anyone can order food online.','Django | PostgreSQL | javascript | Bootstrap'),
